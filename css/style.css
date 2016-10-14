@@ -1,0 +1,16 @@
+ *{margin:0;padding:0;}
+ .fa{width:740px;margin:0 auto;}
+ .top{margin:20px 0;}
+ .top input{width:25px;height:25px;border:1px solid #fff;border-radius:4px;background:#ddd;}
+ .top .i1{background:#000000;}
+ .top .i2{background:#FF0000;}
+ .top .i3{background:#80FF00;}
+ .top .i4{background:#00FFFF;}
+ .top .i5{background:#808080;}
+ .top .i6{background:#FF8000;}
+ .top .i7{background:#408080;}
+ .top .i8{background:#8000FF;}
+ .top .i9{background:#CCCC00;}
+ #canvas{background:#eee;cursor:default;}
+ .font input{font-size:14px;}
+ .top .grea{background:#aaa;}
