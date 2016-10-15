@@ -8,17 +8,17 @@
         },
         load:function()
         {   
-            this.x=[];//记录鼠标移动时的X坐标
-            this.y=[];//记录鼠标移动时的Y坐标
-            this.clickDrag=[];
-            this.lock=false;//鼠标移动前，判断鼠标是否按下
-            this.isEraser=false;
-            //this.Timer=null;//橡皮擦启动计时器
-            //this.radius=5;
+            // this.x=[];//记录鼠标移动时的X坐标
+            // this.y=[];//记录鼠标移动时的Y坐标
+            // this.clickDrag=[];
+            this.lock=true;//鼠标移动前，判断鼠标是否按下
+            // this.isEraser=false;
+            // //this.Timer=null;//橡皮擦启动计时器
+            // //this.radius=5;
             this.storageColor="#000000";
             this.eraserRadius=15;//擦除半径值
             this.color=["#000000","#FF0000","#80FF00","#00FFFF","#808080","#FF8000","#408080","#8000FF","#CCCC00"];//画笔颜色值
-            this.fontWeight=[2,5,8];
+            this.r=[1,2,4];
             this.$=function(id){return typeof id=="string"?document.getElementById(id):id;};
             this.canvas=this.$("canvas");
             if (this.canvas.getContext) {
@@ -34,87 +34,87 @@
             this.imgurl=this.$("imgurl");//图片路径按钮
             this.w=this.canvas.width;//取画布的宽
             this.h=this.canvas.height;//取画布的高 
-            this.touch =("createTouch" in document);//判定是否为手持设备
-            this.StartEvent = this.touch ? "touchstart" : "mousedown";//支持触摸式使用相应的事件替代
-            this.MoveEvent = this.touch ? "touchmove" : "mousemove";
-            this.EndEvent = this.touch ? "touchend" : "mouseup";
-            this.bind();
+            // this.touch =("createTouch" in document);//判定是否为手持设备
+            // this.StartEvent = this.touch ? "touchstart" : "mousedown";//支持触摸式使用相应的事件替代
+            // this.MoveEvent = this.touch ? "touchmove" : "mousemove";
+            // this.EndEvent = this.touch ? "touchend" : "mouseup";
+            // this.bind();
         },
-        bind:function()
-        {
-            var t=this;
-            /*清除画布*/
-            this.iptClear.onclick=function()
-            {
-                t.clear();
-            };
-            /*鼠标按下事件，记录鼠标位置，并绘制，解锁lock，打开mousemove事件*/
-            this.canvas['on'+t.StartEvent]=function(e)
-            {   
-                var touch=t.touch ? e.touches[0] : e; 
-                var _x=touch.clientX - touch.target.offsetLeft;//鼠标在画布上的x坐标，以画布左上角为起点
-                var _y=touch.clientY - touch.target.offsetTop;//鼠标在画布上的y坐标，以画布左上角为起点             
-                if(t.isEraser)
-                {
-                    t.resetEraser(_x,_y,touch);
-                }else
-                {
-                    t.movePoint(_x,_y);//记录鼠标位置
-                    // t.drawPoint();//绘制路线
-                    t.sendSocket();
-                }
-                t.lock=true;
-            };
-            /*鼠标移动事件*/
-            this.canvas['on'+t.MoveEvent]=function(e)
-            {
-                var touch=t.touch ? e.touches[0] : e;
-                if(t.lock)//t.lock为true则执行
-                {
-                    var _x=touch.clientX - touch.target.offsetLeft;//鼠标在画布上的x坐标，以画布左上角为起点
-                    var _y=touch.clientY - touch.target.offsetTop;//鼠标在画布上的y坐标，以画布左上角为起点
-                    if(t.isEraser)
-                    {
-                        //if(t.Timer)clearInterval(t.Timer);
-                        //t.Timer=setInterval(function(){
-                            t.resetEraser(_x,_y,touch);
-                        //},10);
-                    }
-                    else
-                    {
-                        t.movePoint(_x,_y,true);//记录鼠标位置
-                        t.sendSocket();
-                    }
-                }
-            };
-            this.canvas['on'+t.EndEvent]=function(e)
-            {
-                /*重置数据*/
-                t.lock=false;
-                t.x=[];
-                t.y=[];
-                t.clickDrag=[];
-                clearInterval(t.Timer);
-                t.Timer=null;
+        // bind:function()
+        // {
+        //     var t=this;
+        //     /*清除画布*/
+        //     this.iptClear.onclick=function()
+        //     {
+        //         t.clear();
+        //     };
+        //     /*鼠标按下事件，记录鼠标位置，并绘制，解锁lock，打开mousemove事件*/
+        //     this.canvas['on'+t.StartEvent]=function(e)
+        //     {   
+        //         var touch=t.touch ? e.touches[0] : e; 
+        //         var _x=touch.clientX - touch.target.offsetLeft;//鼠标在画布上的x坐标，以画布左上角为起点
+        //         var _y=touch.clientY - touch.target.offsetTop;//鼠标在画布上的y坐标，以画布左上角为起点             
+        //         if(t.isEraser)
+        //         {
+        //             t.resetEraser(_x,_y,touch);
+        //         }else
+        //         {
+        //             t.movePoint(_x,_y);//记录鼠标位置
+        //             // t.drawPoint();//绘制路线
+        //             t.sendSocket();
+        //         }
+        //         t.lock=true;
+        //     };
+        //     /*鼠标移动事件*/
+        //     this.canvas['on'+t.MoveEvent]=function(e)
+        //     {
+        //         var touch=t.touch ? e.touches[0] : e;
+        //         if(t.lock)//t.lock为true则执行
+        //         {
+        //             var _x=touch.clientX - touch.target.offsetLeft;//鼠标在画布上的x坐标，以画布左上角为起点
+        //             var _y=touch.clientY - touch.target.offsetTop;//鼠标在画布上的y坐标，以画布左上角为起点
+        //             if(t.isEraser)
+        //             {
+        //                 //if(t.Timer)clearInterval(t.Timer);
+        //                 //t.Timer=setInterval(function(){
+        //                     t.resetEraser(_x,_y,touch);
+        //                 //},10);
+        //             }
+        //             else
+        //             {
+        //                 t.movePoint(_x,_y,true);//记录鼠标位置
+        //                 t.sendSocket();
+        //             }
+        //         }
+        //     };
+        //     this.canvas['on'+t.EndEvent]=function(e)
+        //     {
+        //         /*重置数据*/
+        //         t.lock=false;
+        //         t.x=[];
+        //         t.y=[];
+        //         t.clickDrag=[];
+        //         clearInterval(t.Timer);
+        //         t.Timer=null;
                 
-            };
-            this.revocation.onclick=function()
-            {
-                t.redraw();
-            };
-            this.changeColor();
-            this.imgurl.onclick=function()
-            {
-                t.getUrl();
-            };
-            /*橡皮擦*/
-            this.$("eraser").onclick=function(e)
-         {
-             t.isEraser=true;
-                t.$("error").style.color="red";
-                t.$("error").innerHTML="您已使用橡皮擦！";
-         };
-        },
+        //     };
+        //     this.revocation.onclick=function()
+        //     {
+        //         t.redraw();
+        //     };
+        //     this.changeColor();
+        //     this.imgurl.onclick=function()
+        //     {
+        //         t.getUrl();
+        //     };
+        //     /*橡皮擦*/
+        //     this.$("eraser").onclick=function(e)
+        //  {
+        //      t.isEraser=true;
+        //         t.$("error").style.color="red";
+        //         t.$("error").innerHTML="您已使用橡皮擦！";
+        //  };
+        // },
         movePoint:function(x,y,dragging)
         {   
             /*将鼠标坐标添加到各自对应的数组里*/
@@ -128,22 +128,6 @@
                 y:this.y
             };
             socket.emit('drawing',data);
-        },
-        drawPoint:function(data)
-        {
-            for(var i=0; i < data.x.length; i++)//循环数组
-            {   
-                this.cxt.beginPath();//context.beginPath() , 准备绘制一条路径
-                
-                if(this.clickDrag[i] && i){//当是拖动而且i!=0时，从上一个点开始画线。
-                    this.cxt.moveTo(data.x[i-1], data.y[i-1]);//context.moveTo(x, y) , 新开一个路径，并指定路径的起点
-                }else{
-                    this.cxt.moveTo(data.x[i]-1, data.y[i]);
-                }
-                this.cxt.lineTo(data.x[i], data.y[i]);//context.lineTo(x, y) , 将当前点与指定的点用一条笔直的路径连接起来
-                this.cxt.closePath();//context.closePath() , 如果当前路径是打开的则关闭它
-                this.cxt.stroke();//context.stroke() , 绘制当前路径
-            }
         },
         clear:function()
         {
@@ -228,7 +212,20 @@
         
     };
     paint.init();
-    socket.on('drawing_back', function(data) {
-        paint.drawPoint(data);
+    socket.on('drawing', function(DATA) {
+        draw(DATA);
     });
 })();
+
+var c=document.getElementById("canvas");
+var ctx=c.getContext("2d");
+
+function draw(DATA) {
+    var color = DATA.color;
+    console.log(color);
+    ctx.beginPath();
+    ctx.fillStyle = color;
+    ctx.arc(DATA.x,DATA.y,5,0,Math.PI*2,true);
+    ctx.fill();
+    ctx.closePath();
+}

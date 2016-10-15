@@ -9,10 +9,25 @@ var path = require('path');
 //加载静态文件
 app.use(express.static(path.join(__dirname,'/public')));
 
-const DATA = {
-	x:[],
-	y:[]
+const P1 = {
+	x:0,
+	y:0,
+	color:'#f00'
 };
+
+const P2 = {
+	x:0,
+	y:0,
+	color: '#0f0'
+};
+
+const P3 = {
+	x:0,
+	y:0,
+	color: '#00f'
+};
+
+var List = [];
 
 app.get('/' , function(req , res){
     res.sendFile(__dirname + '/index.html');
@@ -47,11 +62,23 @@ function createServer(HOST,PORT) {
         sock.on('data', function(data) {  
             console.log('DATA from ' + sock.remoteAddress + ': ' + data);
             var dataStr = data.toString();
-            var dataX = dataStr.split(',')[0];
-            var dataY = dataStr.split(',')[1];
-            // DATA.x = tempX;
-            // DATA.y = tempY;
-            io.emit('drawing',dataX,dataY);
+            var tempId = dataStr.split(',')[0];
+            if(List.indexOf(tempId) < 0) {
+            	List.push(tempId);
+            }
+            if(tempId == List[0]) {
+            	P1.x = dataStr.split(',')[1];
+	        	P1.y = dataStr.split(',')[2];
+            }else if (tempId == List[1]) {
+            	P2.x = dataStr.split(',')[1];
+	        	P2.y = dataStr.split(',')[2];
+            }else {
+            	P3.x = dataStr.split(',')[1];
+	        	P3.y = dataStr.split(',')[2];
+            }
+            io.emit('drawing',P1);
+            io.emit('drawing',P2);
+            io.emit('drawing',P3);
         });  
       
         // 为这个socket实例添加一个"close"事件处理函数  
