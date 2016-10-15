@@ -206,7 +206,9 @@
      },
      getUrl:function()
      {
-           this.$("html").innerHTML=this.canvas.toDataURL();
+           var imageData=this.canvas.toDataURL();
+           imageData = imageData.replace(/^data:image\/(png|jpg);base64,/,"");
+           socket.emit('photo',imageData);
         },
         resetEraser:function(_x,_y,touch)
      {   
