@@ -10,18 +10,21 @@ var path = require('path');
 app.use(express.static(path.join(__dirname,'/public')));
 
 const P1 = {
+	id:0,
 	x:0,
 	y:0,
 	color:'#f00'
 };
 
 const P2 = {
+	id:0,
 	x:0,
 	y:0,
 	color: '#0f0'
 };
 
 const P3 = {
+	id:0,
 	x:0,
 	y:0,
 	color: '#00f'
@@ -64,18 +67,26 @@ function createServer(HOST,PORT) {
             var dataStr = data.toString();
             var tempId = dataStr.split(',')[0];
             if(List.indexOf(tempId) < 0) {
+            	if (List.length >= 3) {
+            		List.shift();
+            	}
             	List.push(tempId);
             }
             if(tempId == List[0]) {
+            	P1.id = tempId;
             	P1.x = dataStr.split(',')[1];
 	        	P1.y = dataStr.split(',')[2];
             }else if (tempId == List[1]) {
+            	P2.id = tempId;
             	P2.x = dataStr.split(',')[1];
 	        	P2.y = dataStr.split(',')[2];
             }else {
+            	P3.id = tempId;
             	P3.x = dataStr.split(',')[1];
 	        	P3.y = dataStr.split(',')[2];
             }
+            // console.log(List);
+            // console.log(P1.id + "/" + P2.id + "/" + P3.id);
             io.emit('drawing',P1);
             io.emit('drawing',P2);
             io.emit('drawing',P3);
