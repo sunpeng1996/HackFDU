@@ -3,7 +3,9 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var fs = require('fs');
-var net = require('net');  
+var net = require('net'); 
+var sharp = require('sharp'); 
+var server = require('./server');
 
 var path = require('path');
 //加载静态文件
@@ -32,6 +34,9 @@ const P3 = {
 
 var List = [];
 
+var Client_HOST = '127.0.0.1';  
+var Client_PORT = 20000; 
+
 app.get('/' , function(req , res){
     res.sendFile(__dirname + '/index.html');
 });
@@ -40,16 +45,35 @@ io.on('connection', function(socket){
 	console.log('链接已建立。');
 
     socket.on('photo', function (data) {  
-    	var bitmap = new Buffer(data, 'base64');
-        console.log('开始写入.');
-		fs.writeFile(__dirname + '/photo.png',bitmap,function (err) {
-			if (err) {
-				return console.error(err);
-			}
-			console.log('数据写入成功!');
-		}); 
+    	var bitmap = new Buffer(data,'base64'); 
+    	createClient(bitmap);
     });
 });
+
+function createClient(data) {
+
+	var client = new net.Socket();  
+	client.connect(Client_PORT, Client_HOST, function() {  
+	  
+	    console.log('CONNECTED TO: ' + Client_HOST + ':' + Client_PORT);  
+	    client.write(data); 
+	    	  
+	});  
+	  
+	// 为客户端添加“data”事件处理函数  
+	// data是服务器发回的数据  
+	client.on('data', function(data) {  
+	    console.log('DATA: ' + data);  
+	     client.destroy();
+
+	});  
+	  
+	// 为客户端添加“close”事件处理函数  
+	client.on('close', function() {  
+		// 完全关闭连接   
+	    console.log('Connection closed');  
+	});  
+}
 
 // 创建一个TCP服务器实例，调用listen函数开始监听指定端口  
 // 传入net.createServer()的回调函数将作为”connection“事件的处理函数  
@@ -108,3 +132,8 @@ http.listen(3000, function(){
   console.log('listening on *:3000');
   createServer('10.221.64.154',2333);
 });
+
+var HOST = '127.0.0.1';
+var PORT_1 = 20000;
+
+server.createServer(HOST,PORT_1);

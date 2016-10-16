@@ -20,7 +20,7 @@ $(document).ready(function(){
 			slideTop:function(target,extent,time){
 				var nowVal=parseInt(target.css("margin-top"));
 				target.css({"margin-top":nowVal+extent,"opacity":0});
-				target.stop(false,true).delay(time).animate({"margin-top":nowVal,"opacity":1},{duration:1500,easing:"easeOutQuad"});
+				target.stop(false,true).delay(time).animate({"margin-top":nowVal,"opacity":1},{duration:1000,easing:"easeOutQuad"});
 			} //50--0---50
 		};
 	textAnimation.slideBottom($("canvas"),-50,500);

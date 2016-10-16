@@ -77,6 +77,17 @@
   display: inline-block;
   vertical-align: top;
   width:72%;
+  margin-top: 50px;
+ }
+ #myCanvas {
+  margin:0 auto;
+  background: #fff;
+  border: solid 1px #cfcfcf;
+ }
+ #receiveCanvas {
+  float: right;
+  background: #fff;
+  border: solid 1px #cfcfcf;
  }
  #topRight{
   display: inline-block;

@@ -1,0 +1,15 @@
+G:\Hack\BodyBasics-WPF\bin\AnyCPU\Debug\BodyBasics-WPF.exe.config
+G:\Hack\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.csprojResolveAssemblyReference.cache
+G:\Hack\BodyBasics-WPF\obj\Debug\BodyBasics-WPF_MarkupCompile.cache
+G:\Hack\BodyBasics-WPF\bin\AnyCPU\Debug\BodyBasics-WPF.exe
+G:\Hack\BodyBasics-WPF\bin\AnyCPU\Debug\BodyBasics-WPF.pdb
+G:\Hack\BodyBasics-WPF\bin\AnyCPU\Debug\Microsoft.Kinect.dll
+G:\Hack\BodyBasics-WPF\bin\AnyCPU\Debug\Microsoft.Kinect.xml
+G:\Hack\BodyBasics-WPF\obj\Debug\MainWindow.baml
+G:\Hack\BodyBasics-WPF\obj\Debug\MainWindow.g.cs
+G:\Hack\BodyBasics-WPF\obj\Debug\App.g.cs
+G:\Hack\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.g.resources
+G:\Hack\BodyBasics-WPF\obj\Debug\Microsoft.Samples.Kinect.BodyBasics.Properties.Resources.resources
+G:\Hack\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.csproj.GenerateResource.Cache
+G:\Hack\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.exe
+G:\Hack\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.pdb
