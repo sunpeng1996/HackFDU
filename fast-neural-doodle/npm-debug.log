@@ -1,0 +1,1052 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'sharp' ]
+2 info using npm@3.8.6
+3 info using node@v5.12.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData sharp
+8 silly fetchNamedPackageData sharp
+9 silly mapToRegistry name sharp
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'sharp',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'sharp',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/sharp
+14 verbose request uri https://registry.npmjs.org/sharp
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 2:39:52 AM
+17 verbose request id 1eea5f22a05dc1c8
+18 http request GET https://registry.npmjs.org/sharp
+19 http 200 https://registry.npmjs.org/sharp
+20 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+20 verbose headers   etag: '"85JNEOK8I1H0JKN9VUGJYSVSO"',
+20 verbose headers   'content-type': 'application/json',
+20 verbose headers   'content-encoding': 'gzip',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   'content-length': '13264',
+20 verbose headers   'accept-ranges': 'bytes',
+20 verbose headers   date: 'Sat, 15 Oct 2016 18:39:53 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   age: '0',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-itm7423-ITM',
+20 verbose headers   'x-cache': 'MISS',
+20 verbose headers   'x-cache-hits': '0',
+20 verbose headers   'x-timer': 'S1476556792.621518,VS0,VE972',
+20 verbose headers   vary: 'Accept-Encoding' }
+21 silly get cb [ 200,
+21 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+21 silly get     etag: '"85JNEOK8I1H0JKN9VUGJYSVSO"',
+21 silly get     'content-type': 'application/json',
+21 silly get     'content-encoding': 'gzip',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     'content-length': '13264',
+21 silly get     'accept-ranges': 'bytes',
+21 silly get     date: 'Sat, 15 Oct 2016 18:39:53 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     age: '0',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-itm7423-ITM',
+21 silly get     'x-cache': 'MISS',
+21 silly get     'x-cache-hits': '0',
+21 silly get     'x-timer': 'S1476556792.621518,VS0,VE972',
+21 silly get     vary: 'Accept-Encoding' } ]
+22 verbose get saving sharp to /home/ubuntu/.npm/registry.npmjs.org/sharp/.cache.json
+23 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+24 verbose makeDirectory /home/ubuntu/.npm creation not in flight; initializing
+25 silly makeDirectory /home/ubuntu/.npm uid: 1000 gid: 1000
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule sharp@0.16.1 checking installable status
+39 silly cache add args [ 'sharp', null ]
+40 verbose cache add spec sharp
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: 'sharp',
+41 silly cache add   scope: null,
+41 silly cache add   name: 'sharp',
+41 silly cache add   rawSpec: '',
+41 silly cache add   spec: 'latest',
+41 silly cache add   type: 'tag' }
+42 silly addNamed sharp@latest
+43 verbose addNamed "latest" is being treated as a dist-tag for sharp
+44 info addNameTag [ 'sharp', 'latest' ]
+45 silly mapToRegistry name sharp
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: 'sharp',
+48 silly mapToRegistry   scope: null,
+48 silly mapToRegistry   name: 'sharp',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npmjs.org/sharp
+50 verbose addNameTag registry:https://registry.npmjs.org/sharp not in flight; fetching
+51 verbose get https://registry.npmjs.org/sharp not expired, no request
+52 silly addNameTag next cb for sharp with tag latest
+53 silly addNamed sharp@0.16.1
+54 verbose addNamed "0.16.1" is a plain semver version for sharp
+55 silly mapToRegistry name sharp
+56 silly mapToRegistry using default registry
+57 silly mapToRegistry registry https://registry.npmjs.org/
+58 silly mapToRegistry data Result {
+58 silly mapToRegistry   raw: 'sharp',
+58 silly mapToRegistry   scope: null,
+58 silly mapToRegistry   name: 'sharp',
+58 silly mapToRegistry   rawSpec: '',
+58 silly mapToRegistry   spec: 'latest',
+58 silly mapToRegistry   type: 'tag' }
+59 silly mapToRegistry uri https://registry.npmjs.org/sharp
+60 verbose addRemoteTarball https://registry.npmjs.org/sharp/-/sharp-0.16.1.tgz not in flight; adding
+61 verbose addRemoteTarball [ 'https://registry.npmjs.org/sharp/-/sharp-0.16.1.tgz',
+61 verbose addRemoteTarball   'fc1dfd929240d0586de1507b6274f6410bb35291' ]
+62 info retry fetch attempt 1 at 2:39:54 AM
+63 info attempt registry request try #1 at 2:39:54 AM
+64 http fetch GET https://registry.npmjs.org/sharp/-/sharp-0.16.1.tgz
+65 http fetch 200 https://registry.npmjs.org/sharp/-/sharp-0.16.1.tgz
+66 silly fetchAndShaCheck shasum fc1dfd929240d0586de1507b6274f6410bb35291
+67 verbose addTmpTarball /tmp/npm-7953-c4353620/registry.npmjs.org/sharp/-/sharp-0.16.1.tgz not in flight; adding
+68 verbose addTmpTarball already have metadata; skipping unpack for sharp@0.16.1
+69 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+70 silly cache afterAdd sharp@0.16.1
+71 verbose afterAdd /home/ubuntu/.npm/sharp/0.16.1/package/package.json not in flight; writing
+72 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+73 verbose afterAdd /home/ubuntu/.npm/sharp/0.16.1/package/package.json written
+74 silly loadAllDepsIntoIdealTree Finishing
+75 silly idealTree:prePrune HackFDU
+75 silly idealTree:prePrune ├── accepts@1.3.3
+75 silly idealTree:prePrune ├── after@0.8.1
+75 silly idealTree:prePrune ├── ansi-regex@2.0.0
+75 silly idealTree:prePrune ├── ansi-styles@2.2.1
+75 silly idealTree:prePrune ├── array-flatten@1.1.1
+75 silly idealTree:prePrune ├── arraybuffer.slice@0.0.6
+75 silly idealTree:prePrune ├── asn1@0.2.3
+75 silly idealTree:prePrune ├── assert-plus@0.2.0
+75 silly idealTree:prePrune ├── asynckit@0.4.0
+75 silly idealTree:prePrune ├── aws-sign2@0.6.0
+75 silly idealTree:prePrune ├── aws4@1.5.0
+75 silly idealTree:prePrune ├── backo2@1.0.2
+75 silly idealTree:prePrune ├── balanced-match@0.4.2
+75 silly idealTree:prePrune ├── base64-arraybuffer@0.1.5
+75 silly idealTree:prePrune ├── base64id@0.1.0
+75 silly idealTree:prePrune ├── bcrypt-pbkdf@1.0.0
+75 silly idealTree:prePrune ├── benchmark@1.0.0
+75 silly idealTree:prePrune ├── better-assert@1.0.2
+75 silly idealTree:prePrune ├── bl@1.1.2
+75 silly idealTree:prePrune ├── blob@0.0.4
+75 silly idealTree:prePrune ├── block-stream@0.0.9
+75 silly idealTree:prePrune ├── bluebird@3.4.6
+75 silly idealTree:prePrune ├── boom@2.10.1
+75 silly idealTree:prePrune ├── brace-expansion@1.1.6
+75 silly idealTree:prePrune ├── callsite@1.0.0
+75 silly idealTree:prePrune ├── caseless@0.11.0
+75 silly idealTree:prePrune ├── chalk@1.1.3
+75 silly idealTree:prePrune ├── clone@1.0.2
+75 silly idealTree:prePrune ├── color-convert@1.5.0
+75 silly idealTree:prePrune ├── color-name@1.1.1
+75 silly idealTree:prePrune ├── color-string@0.3.0
+75 silly idealTree:prePrune ├── color@0.11.3
+75 silly idealTree:prePrune ├── combined-stream@1.0.5
+75 silly idealTree:prePrune ├── commander@2.9.0
+75 silly idealTree:prePrune ├── component-bind@1.0.0
+75 silly idealTree:prePrune ├── component-emitter@1.1.2
+75 silly idealTree:prePrune ├── component-inherit@0.0.3
+75 silly idealTree:prePrune ├── concat-map@0.0.1
+75 silly idealTree:prePrune ├── content-disposition@0.5.1
+75 silly idealTree:prePrune ├── content-type@1.0.2
+75 silly idealTree:prePrune ├── cookie-signature@1.0.6
+75 silly idealTree:prePrune ├── cookie@0.3.1
+75 silly idealTree:prePrune ├── core-util-is@1.0.2
+75 silly idealTree:prePrune ├── cryptiles@2.0.5
+75 silly idealTree:prePrune ├─┬ dashdash@1.14.0
+75 silly idealTree:prePrune │ └── assert-plus@1.0.0
+75 silly idealTree:prePrune ├── debug@2.2.0
+75 silly idealTree:prePrune ├── delayed-stream@1.0.0
+75 silly idealTree:prePrune ├── depd@1.1.0
+75 silly idealTree:prePrune ├── destroy@1.0.4
+75 silly idealTree:prePrune ├── ecc-jsbn@0.1.1
+75 silly idealTree:prePrune ├── ee-first@1.1.1
+75 silly idealTree:prePrune ├── encodeurl@1.0.1
+75 silly idealTree:prePrune ├── engine.io-client@1.7.0
+75 silly idealTree:prePrune ├─┬ engine.io-parser@1.3.0
+75 silly idealTree:prePrune │ └── has-binary@0.1.6
+75 silly idealTree:prePrune ├── engine.io@1.7.0
+75 silly idealTree:prePrune ├── escape-html@1.0.3
+75 silly idealTree:prePrune ├── escape-string-regexp@1.0.5
+75 silly idealTree:prePrune ├── etag@1.7.0
+75 silly idealTree:prePrune ├── express@4.14.0
+75 silly idealTree:prePrune ├── extend@3.0.0
+75 silly idealTree:prePrune ├── extsprintf@1.0.2
+75 silly idealTree:prePrune ├── finalhandler@0.5.0
+75 silly idealTree:prePrune ├── forever-agent@0.6.1
+75 silly idealTree:prePrune ├── form-data@2.0.0
+75 silly idealTree:prePrune ├── forwarded@0.1.0
+75 silly idealTree:prePrune ├── fresh@0.3.0
+75 silly idealTree:prePrune ├── fs.realpath@1.0.0
+75 silly idealTree:prePrune ├── fstream@1.0.10
+75 silly idealTree:prePrune ├── generate-function@2.0.0
+75 silly idealTree:prePrune ├── generate-object-property@1.2.0
+75 silly idealTree:prePrune ├─┬ getpass@0.1.6
+75 silly idealTree:prePrune │ └── assert-plus@1.0.0
+75 silly idealTree:prePrune ├── glob@7.1.1
+75 silly idealTree:prePrune ├── graceful-fs@4.1.9
+75 silly idealTree:prePrune ├── graceful-readlink@1.0.1
+75 silly idealTree:prePrune ├── har-validator@2.0.6
+75 silly idealTree:prePrune ├── has-ansi@2.0.0
+75 silly idealTree:prePrune ├── has-binary@0.1.7
+75 silly idealTree:prePrune ├── has-cors@1.1.0
+75 silly idealTree:prePrune ├── hawk@3.1.3
+75 silly idealTree:prePrune ├── hoek@2.16.3
+75 silly idealTree:prePrune ├── http-errors@1.5.0
+75 silly idealTree:prePrune ├── http-signature@1.1.1
+75 silly idealTree:prePrune ├── indexof@0.0.1
+75 silly idealTree:prePrune ├── inflight@1.0.6
+75 silly idealTree:prePrune ├── inherits@2.0.1
+75 silly idealTree:prePrune ├── ipaddr.js@1.1.1
+75 silly idealTree:prePrune ├── is-my-json-valid@2.15.0
+75 silly idealTree:prePrune ├── is-property@1.0.2
+75 silly idealTree:prePrune ├── is-typedarray@1.0.0
+75 silly idealTree:prePrune ├── isarray@0.0.1
+75 silly idealTree:prePrune ├── isstream@0.1.2
+75 silly idealTree:prePrune ├── jodid25519@1.0.2
+75 silly idealTree:prePrune ├── jsbn@0.1.0
+75 silly idealTree:prePrune ├── json-schema@0.2.3
+75 silly idealTree:prePrune ├── json-stringify-safe@5.0.1
+75 silly idealTree:prePrune ├── json3@3.2.6
+75 silly idealTree:prePrune ├── jsonpointer@4.0.0
+75 silly idealTree:prePrune ├── jsprim@1.3.1
+75 silly idealTree:prePrune ├── media-typer@0.3.0
+75 silly idealTree:prePrune ├── merge-descriptors@1.0.1
+75 silly idealTree:prePrune ├── methods@1.1.2
+75 silly idealTree:prePrune ├── mime-db@1.24.0
+75 silly idealTree:prePrune ├── mime-types@2.1.12
+75 silly idealTree:prePrune ├── mime@1.3.4
+75 silly idealTree:prePrune ├── minimatch@3.0.3
+75 silly idealTree:prePrune ├── minimist@0.0.8
+75 silly idealTree:prePrune ├── mkdirp@0.5.1
+75 silly idealTree:prePrune ├── ms@0.7.1
+75 silly idealTree:prePrune ├── nan@2.4.0
+75 silly idealTree:prePrune ├── negotiator@0.6.1
+75 silly idealTree:prePrune ├── node-uuid@1.4.7
+75 silly idealTree:prePrune ├── oauth-sign@0.8.2
+75 silly idealTree:prePrune ├── object-component@0.0.3
+75 silly idealTree:prePrune ├── on-finished@2.3.0
+75 silly idealTree:prePrune ├── once@1.4.0
+75 silly idealTree:prePrune ├── options@0.0.6
+75 silly idealTree:prePrune ├── paperjs-v0.10.2
+75 silly idealTree:prePrune ├── parsejson@0.0.1
+75 silly idealTree:prePrune ├── parseqs@0.0.2
+75 silly idealTree:prePrune ├── parseuri@0.0.4
+75 silly idealTree:prePrune ├── parseurl@1.3.1
+75 silly idealTree:prePrune ├── path-is-absolute@1.0.1
+75 silly idealTree:prePrune ├── path-to-regexp@0.1.7
+75 silly idealTree:prePrune ├── pinkie-promise@2.0.1
+75 silly idealTree:prePrune ├── pinkie@2.0.4
+75 silly idealTree:prePrune ├── process-nextick-args@1.0.7
+75 silly idealTree:prePrune ├── proxy-addr@1.1.2
+75 silly idealTree:prePrune ├── qs@6.2.0
+75 silly idealTree:prePrune ├── range-parser@1.2.0
+75 silly idealTree:prePrune ├─┬ readable-stream@2.0.6
+75 silly idealTree:prePrune │ └── isarray@1.0.0
+75 silly idealTree:prePrune ├── request@2.75.0
+75 silly idealTree:prePrune ├── rimraf@2.5.4
+75 silly idealTree:prePrune ├── semver@5.3.0
+75 silly idealTree:prePrune ├── send@0.14.1
+75 silly idealTree:prePrune ├── serve-static@1.11.1
+75 silly idealTree:prePrune ├── setprototypeof@1.0.1
+75 silly idealTree:prePrune ├── sharp@0.16.1
+75 silly idealTree:prePrune ├── sntp@1.0.9
+75 silly idealTree:prePrune ├─┬ socket.io-adapter@0.4.0
+75 silly idealTree:prePrune │ └─┬ socket.io-parser@2.2.2
+75 silly idealTree:prePrune │   └── debug@0.7.4
+75 silly idealTree:prePrune ├─┬ socket.io-client@1.5.0
+75 silly idealTree:prePrune │ └── component-emitter@1.2.0
+75 silly idealTree:prePrune ├─┬ socket.io-parser@2.2.6
+75 silly idealTree:prePrune │ └── json3@3.3.2
+75 silly idealTree:prePrune ├── socket.io@1.5.0
+75 silly idealTree:prePrune ├─┬ sshpk@1.10.1
+75 silly idealTree:prePrune │ └── assert-plus@1.0.0
+75 silly idealTree:prePrune ├── statuses@1.3.0
+75 silly idealTree:prePrune ├── string_decoder@0.10.31
+75 silly idealTree:prePrune ├── stringstream@0.0.5
+75 silly idealTree:prePrune ├── strip-ansi@3.0.1
+75 silly idealTree:prePrune ├── supports-color@2.0.0
+75 silly idealTree:prePrune ├── tar@2.2.1
+75 silly idealTree:prePrune ├── to-array@0.1.4
+75 silly idealTree:prePrune ├── tough-cookie@2.3.1
+75 silly idealTree:prePrune ├── tunnel-agent@0.4.3
+75 silly idealTree:prePrune ├── tweetnacl@0.14.3
+75 silly idealTree:prePrune ├── type-is@1.6.13
+75 silly idealTree:prePrune ├── ultron@1.0.2
+75 silly idealTree:prePrune ├── unpipe@1.0.0
+75 silly idealTree:prePrune ├── util-deprecate@1.0.2
+75 silly idealTree:prePrune ├── utils-merge@1.0.0
+75 silly idealTree:prePrune ├── vary@1.1.0
+75 silly idealTree:prePrune ├── verror@1.3.6
+75 silly idealTree:prePrune ├── wrappy@1.0.2
+75 silly idealTree:prePrune ├── ws@1.1.1
+75 silly idealTree:prePrune ├── wtf-8@1.0.0
+75 silly idealTree:prePrune ├── xmlhttprequest-ssl@1.5.1
+75 silly idealTree:prePrune ├── xtend@4.0.1
+75 silly idealTree:prePrune └── yeast@0.1.2
+76 silly loadIdealTree Finishing
+77 silly currentTree HackFDU
+77 silly currentTree ├── accepts@1.3.3
+77 silly currentTree ├── after@0.8.1
+77 silly currentTree ├── ansi-regex@2.0.0
+77 silly currentTree ├── ansi-styles@2.2.1
+77 silly currentTree ├── array-flatten@1.1.1
+77 silly currentTree ├── arraybuffer.slice@0.0.6
+77 silly currentTree ├── asn1@0.2.3
+77 silly currentTree ├── assert-plus@0.2.0
+77 silly currentTree ├── asynckit@0.4.0
+77 silly currentTree ├── aws-sign2@0.6.0
+77 silly currentTree ├── aws4@1.5.0
+77 silly currentTree ├── backo2@1.0.2
+77 silly currentTree ├── balanced-match@0.4.2
+77 silly currentTree ├── base64-arraybuffer@0.1.5
+77 silly currentTree ├── base64id@0.1.0
+77 silly currentTree ├── bcrypt-pbkdf@1.0.0
+77 silly currentTree ├── benchmark@1.0.0
+77 silly currentTree ├── better-assert@1.0.2
+77 silly currentTree ├── bl@1.1.2
+77 silly currentTree ├── blob@0.0.4
+77 silly currentTree ├── block-stream@0.0.9
+77 silly currentTree ├── bluebird@3.4.6
+77 silly currentTree ├── boom@2.10.1
+77 silly currentTree ├── brace-expansion@1.1.6
+77 silly currentTree ├── callsite@1.0.0
+77 silly currentTree ├── caseless@0.11.0
+77 silly currentTree ├── chalk@1.1.3
+77 silly currentTree ├── clone@1.0.2
+77 silly currentTree ├── color-convert@1.5.0
+77 silly currentTree ├── color-name@1.1.1
+77 silly currentTree ├── color-string@0.3.0
+77 silly currentTree ├── color@0.11.3
+77 silly currentTree ├── combined-stream@1.0.5
+77 silly currentTree ├── commander@2.9.0
+77 silly currentTree ├── component-bind@1.0.0
+77 silly currentTree ├── component-emitter@1.1.2
+77 silly currentTree ├── component-inherit@0.0.3
+77 silly currentTree ├── concat-map@0.0.1
+77 silly currentTree ├── content-disposition@0.5.1
+77 silly currentTree ├── content-type@1.0.2
+77 silly currentTree ├── cookie-signature@1.0.6
+77 silly currentTree ├── cookie@0.3.1
+77 silly currentTree ├── core-util-is@1.0.2
+77 silly currentTree ├── cryptiles@2.0.5
+77 silly currentTree ├─┬ dashdash@1.14.0
+77 silly currentTree │ └── assert-plus@1.0.0
+77 silly currentTree ├── debug@2.2.0
+77 silly currentTree ├── delayed-stream@1.0.0
+77 silly currentTree ├── depd@1.1.0
+77 silly currentTree ├── destroy@1.0.4
+77 silly currentTree ├── ecc-jsbn@0.1.1
+77 silly currentTree ├── ee-first@1.1.1
+77 silly currentTree ├── encodeurl@1.0.1
+77 silly currentTree ├── engine.io-client@1.7.0
+77 silly currentTree ├─┬ engine.io-parser@1.3.0
+77 silly currentTree │ └── has-binary@0.1.6
+77 silly currentTree ├── engine.io@1.7.0
+77 silly currentTree ├── escape-html@1.0.3
+77 silly currentTree ├── escape-string-regexp@1.0.5
+77 silly currentTree ├── etag@1.7.0
+77 silly currentTree ├── express@4.14.0
+77 silly currentTree ├── extend@3.0.0
+77 silly currentTree ├── extsprintf@1.0.2
+77 silly currentTree ├── finalhandler@0.5.0
+77 silly currentTree ├── forever-agent@0.6.1
+77 silly currentTree ├── form-data@2.0.0
+77 silly currentTree ├── forwarded@0.1.0
+77 silly currentTree ├── fresh@0.3.0
+77 silly currentTree ├── fs.realpath@1.0.0
+77 silly currentTree ├── fstream@1.0.10
+77 silly currentTree ├── generate-function@2.0.0
+77 silly currentTree ├── generate-object-property@1.2.0
+77 silly currentTree ├─┬ getpass@0.1.6
+77 silly currentTree │ └── assert-plus@1.0.0
+77 silly currentTree ├── glob@7.1.1
+77 silly currentTree ├── graceful-fs@4.1.9
+77 silly currentTree ├── graceful-readlink@1.0.1
+77 silly currentTree ├── har-validator@2.0.6
+77 silly currentTree ├── has-ansi@2.0.0
+77 silly currentTree ├── has-binary@0.1.7
+77 silly currentTree ├── has-cors@1.1.0
+77 silly currentTree ├── hawk@3.1.3
+77 silly currentTree ├── hoek@2.16.3
+77 silly currentTree ├── http-errors@1.5.0
+77 silly currentTree ├── http-signature@1.1.1
+77 silly currentTree ├── indexof@0.0.1
+77 silly currentTree ├── inflight@1.0.6
+77 silly currentTree ├── inherits@2.0.1
+77 silly currentTree ├── ipaddr.js@1.1.1
+77 silly currentTree ├── is-my-json-valid@2.15.0
+77 silly currentTree ├── is-property@1.0.2
+77 silly currentTree ├── is-typedarray@1.0.0
+77 silly currentTree ├── isarray@0.0.1
+77 silly currentTree ├── isstream@0.1.2
+77 silly currentTree ├── jodid25519@1.0.2
+77 silly currentTree ├── jsbn@0.1.0
+77 silly currentTree ├── json-schema@0.2.3
+77 silly currentTree ├── json-stringify-safe@5.0.1
+77 silly currentTree ├── json3@3.2.6
+77 silly currentTree ├── jsonpointer@4.0.0
+77 silly currentTree ├── jsprim@1.3.1
+77 silly currentTree ├── media-typer@0.3.0
+77 silly currentTree ├── merge-descriptors@1.0.1
+77 silly currentTree ├── methods@1.1.2
+77 silly currentTree ├── mime-db@1.24.0
+77 silly currentTree ├── mime-types@2.1.12
+77 silly currentTree ├── mime@1.3.4
+77 silly currentTree ├── minimatch@3.0.3
+77 silly currentTree ├── minimist@0.0.8
+77 silly currentTree ├── mkdirp@0.5.1
+77 silly currentTree ├── ms@0.7.1
+77 silly currentTree ├── nan@2.4.0
+77 silly currentTree ├── negotiator@0.6.1
+77 silly currentTree ├── node-uuid@1.4.7
+77 silly currentTree ├── oauth-sign@0.8.2
+77 silly currentTree ├── object-component@0.0.3
+77 silly currentTree ├── on-finished@2.3.0
+77 silly currentTree ├── once@1.4.0
+77 silly currentTree ├── options@0.0.6
+77 silly currentTree ├── paperjs-v0.10.2
+77 silly currentTree ├── parsejson@0.0.1
+77 silly currentTree ├── parseqs@0.0.2
+77 silly currentTree ├── parseuri@0.0.4
+77 silly currentTree ├── parseurl@1.3.1
+77 silly currentTree ├── path-is-absolute@1.0.1
+77 silly currentTree ├── path-to-regexp@0.1.7
+77 silly currentTree ├── pinkie-promise@2.0.1
+77 silly currentTree ├── pinkie@2.0.4
+77 silly currentTree ├── process-nextick-args@1.0.7
+77 silly currentTree ├── proxy-addr@1.1.2
+77 silly currentTree ├── qs@6.2.0
+77 silly currentTree ├── range-parser@1.2.0
+77 silly currentTree ├─┬ readable-stream@2.0.6
+77 silly currentTree │ └── isarray@1.0.0
+77 silly currentTree ├── request@2.75.0
+77 silly currentTree ├── rimraf@2.5.4
+77 silly currentTree ├── semver@5.3.0
+77 silly currentTree ├── send@0.14.1
+77 silly currentTree ├── serve-static@1.11.1
+77 silly currentTree ├── setprototypeof@1.0.1
+77 silly currentTree ├── sntp@1.0.9
+77 silly currentTree ├─┬ socket.io-adapter@0.4.0
+77 silly currentTree │ └─┬ socket.io-parser@2.2.2
+77 silly currentTree │   └── debug@0.7.4
+77 silly currentTree ├─┬ socket.io-client@1.5.0
+77 silly currentTree │ └── component-emitter@1.2.0
+77 silly currentTree ├─┬ socket.io-parser@2.2.6
+77 silly currentTree │ └── json3@3.3.2
+77 silly currentTree ├── socket.io@1.5.0
+77 silly currentTree ├─┬ sshpk@1.10.1
+77 silly currentTree │ └── assert-plus@1.0.0
+77 silly currentTree ├── statuses@1.3.0
+77 silly currentTree ├── string_decoder@0.10.31
+77 silly currentTree ├── stringstream@0.0.5
+77 silly currentTree ├── strip-ansi@3.0.1
+77 silly currentTree ├── supports-color@2.0.0
+77 silly currentTree ├── tar@2.2.1
+77 silly currentTree ├── to-array@0.1.4
+77 silly currentTree ├── tough-cookie@2.3.1
+77 silly currentTree ├── tunnel-agent@0.4.3
+77 silly currentTree ├── tweetnacl@0.14.3
+77 silly currentTree ├── type-is@1.6.13
+77 silly currentTree ├── ultron@1.0.2
+77 silly currentTree ├── unpipe@1.0.0
+77 silly currentTree ├── util-deprecate@1.0.2
+77 silly currentTree ├── utils-merge@1.0.0
+77 silly currentTree ├── vary@1.1.0
+77 silly currentTree ├── verror@1.3.6
+77 silly currentTree ├── wrappy@1.0.2
+77 silly currentTree ├── ws@1.1.1
+77 silly currentTree ├── wtf-8@1.0.0
+77 silly currentTree ├── xmlhttprequest-ssl@1.5.1
+77 silly currentTree ├── xtend@4.0.1
+77 silly currentTree └── yeast@0.1.2
+78 silly idealTree HackFDU
+78 silly idealTree ├── accepts@1.3.3
+78 silly idealTree ├── after@0.8.1
+78 silly idealTree ├── ansi-regex@2.0.0
+78 silly idealTree ├── ansi-styles@2.2.1
+78 silly idealTree ├── array-flatten@1.1.1
+78 silly idealTree ├── arraybuffer.slice@0.0.6
+78 silly idealTree ├── asn1@0.2.3
+78 silly idealTree ├── assert-plus@0.2.0
+78 silly idealTree ├── asynckit@0.4.0
+78 silly idealTree ├── aws-sign2@0.6.0
+78 silly idealTree ├── aws4@1.5.0
+78 silly idealTree ├── backo2@1.0.2
+78 silly idealTree ├── balanced-match@0.4.2
+78 silly idealTree ├── base64-arraybuffer@0.1.5
+78 silly idealTree ├── base64id@0.1.0
+78 silly idealTree ├── bcrypt-pbkdf@1.0.0
+78 silly idealTree ├── benchmark@1.0.0
+78 silly idealTree ├── better-assert@1.0.2
+78 silly idealTree ├── bl@1.1.2
+78 silly idealTree ├── blob@0.0.4
+78 silly idealTree ├── block-stream@0.0.9
+78 silly idealTree ├── bluebird@3.4.6
+78 silly idealTree ├── boom@2.10.1
+78 silly idealTree ├── brace-expansion@1.1.6
+78 silly idealTree ├── callsite@1.0.0
+78 silly idealTree ├── caseless@0.11.0
+78 silly idealTree ├── chalk@1.1.3
+78 silly idealTree ├── clone@1.0.2
+78 silly idealTree ├── color-convert@1.5.0
+78 silly idealTree ├── color-name@1.1.1
+78 silly idealTree ├── color-string@0.3.0
+78 silly idealTree ├── color@0.11.3
+78 silly idealTree ├── combined-stream@1.0.5
+78 silly idealTree ├── commander@2.9.0
+78 silly idealTree ├── component-bind@1.0.0
+78 silly idealTree ├── component-emitter@1.1.2
+78 silly idealTree ├── component-inherit@0.0.3
+78 silly idealTree ├── concat-map@0.0.1
+78 silly idealTree ├── content-disposition@0.5.1
+78 silly idealTree ├── content-type@1.0.2
+78 silly idealTree ├── cookie-signature@1.0.6
+78 silly idealTree ├── cookie@0.3.1
+78 silly idealTree ├── core-util-is@1.0.2
+78 silly idealTree ├── cryptiles@2.0.5
+78 silly idealTree ├─┬ dashdash@1.14.0
+78 silly idealTree │ └── assert-plus@1.0.0
+78 silly idealTree ├── debug@2.2.0
+78 silly idealTree ├── delayed-stream@1.0.0
+78 silly idealTree ├── depd@1.1.0
+78 silly idealTree ├── destroy@1.0.4
+78 silly idealTree ├── ecc-jsbn@0.1.1
+78 silly idealTree ├── ee-first@1.1.1
+78 silly idealTree ├── encodeurl@1.0.1
+78 silly idealTree ├── engine.io-client@1.7.0
+78 silly idealTree ├─┬ engine.io-parser@1.3.0
+78 silly idealTree │ └── has-binary@0.1.6
+78 silly idealTree ├── engine.io@1.7.0
+78 silly idealTree ├── escape-html@1.0.3
+78 silly idealTree ├── escape-string-regexp@1.0.5
+78 silly idealTree ├── etag@1.7.0
+78 silly idealTree ├── express@4.14.0
+78 silly idealTree ├── extend@3.0.0
+78 silly idealTree ├── extsprintf@1.0.2
+78 silly idealTree ├── finalhandler@0.5.0
+78 silly idealTree ├── forever-agent@0.6.1
+78 silly idealTree ├── form-data@2.0.0
+78 silly idealTree ├── forwarded@0.1.0
+78 silly idealTree ├── fresh@0.3.0
+78 silly idealTree ├── fs.realpath@1.0.0
+78 silly idealTree ├── fstream@1.0.10
+78 silly idealTree ├── generate-function@2.0.0
+78 silly idealTree ├── generate-object-property@1.2.0
+78 silly idealTree ├─┬ getpass@0.1.6
+78 silly idealTree │ └── assert-plus@1.0.0
+78 silly idealTree ├── glob@7.1.1
+78 silly idealTree ├── graceful-fs@4.1.9
+78 silly idealTree ├── graceful-readlink@1.0.1
+78 silly idealTree ├── har-validator@2.0.6
+78 silly idealTree ├── has-ansi@2.0.0
+78 silly idealTree ├── has-binary@0.1.7
+78 silly idealTree ├── has-cors@1.1.0
+78 silly idealTree ├── hawk@3.1.3
+78 silly idealTree ├── hoek@2.16.3
+78 silly idealTree ├── http-errors@1.5.0
+78 silly idealTree ├── http-signature@1.1.1
+78 silly idealTree ├── indexof@0.0.1
+78 silly idealTree ├── inflight@1.0.6
+78 silly idealTree ├── inherits@2.0.1
+78 silly idealTree ├── ipaddr.js@1.1.1
+78 silly idealTree ├── is-my-json-valid@2.15.0
+78 silly idealTree ├── is-property@1.0.2
+78 silly idealTree ├── is-typedarray@1.0.0
+78 silly idealTree ├── isarray@0.0.1
+78 silly idealTree ├── isstream@0.1.2
+78 silly idealTree ├── jodid25519@1.0.2
+78 silly idealTree ├── jsbn@0.1.0
+78 silly idealTree ├── json-schema@0.2.3
+78 silly idealTree ├── json-stringify-safe@5.0.1
+78 silly idealTree ├── json3@3.2.6
+78 silly idealTree ├── jsonpointer@4.0.0
+78 silly idealTree ├── jsprim@1.3.1
+78 silly idealTree ├── media-typer@0.3.0
+78 silly idealTree ├── merge-descriptors@1.0.1
+78 silly idealTree ├── methods@1.1.2
+78 silly idealTree ├── mime-db@1.24.0
+78 silly idealTree ├── mime-types@2.1.12
+78 silly idealTree ├── mime@1.3.4
+78 silly idealTree ├── minimatch@3.0.3
+78 silly idealTree ├── minimist@0.0.8
+78 silly idealTree ├── mkdirp@0.5.1
+78 silly idealTree ├── ms@0.7.1
+78 silly idealTree ├── nan@2.4.0
+78 silly idealTree ├── negotiator@0.6.1
+78 silly idealTree ├── node-uuid@1.4.7
+78 silly idealTree ├── oauth-sign@0.8.2
+78 silly idealTree ├── object-component@0.0.3
+78 silly idealTree ├── on-finished@2.3.0
+78 silly idealTree ├── once@1.4.0
+78 silly idealTree ├── options@0.0.6
+78 silly idealTree ├── paperjs-v0.10.2
+78 silly idealTree ├── parsejson@0.0.1
+78 silly idealTree ├── parseqs@0.0.2
+78 silly idealTree ├── parseuri@0.0.4
+78 silly idealTree ├── parseurl@1.3.1
+78 silly idealTree ├── path-is-absolute@1.0.1
+78 silly idealTree ├── path-to-regexp@0.1.7
+78 silly idealTree ├── pinkie-promise@2.0.1
+78 silly idealTree ├── pinkie@2.0.4
+78 silly idealTree ├── process-nextick-args@1.0.7
+78 silly idealTree ├── proxy-addr@1.1.2
+78 silly idealTree ├── qs@6.2.0
+78 silly idealTree ├── range-parser@1.2.0
+78 silly idealTree ├─┬ readable-stream@2.0.6
+78 silly idealTree │ └── isarray@1.0.0
+78 silly idealTree ├── request@2.75.0
+78 silly idealTree ├── rimraf@2.5.4
+78 silly idealTree ├── semver@5.3.0
+78 silly idealTree ├── send@0.14.1
+78 silly idealTree ├── serve-static@1.11.1
+78 silly idealTree ├── setprototypeof@1.0.1
+78 silly idealTree ├── sharp@0.16.1
+78 silly idealTree ├── sntp@1.0.9
+78 silly idealTree ├─┬ socket.io-adapter@0.4.0
+78 silly idealTree │ └─┬ socket.io-parser@2.2.2
+78 silly idealTree │   └── debug@0.7.4
+78 silly idealTree ├─┬ socket.io-client@1.5.0
+78 silly idealTree │ └── component-emitter@1.2.0
+78 silly idealTree ├─┬ socket.io-parser@2.2.6
+78 silly idealTree │ └── json3@3.3.2
+78 silly idealTree ├── socket.io@1.5.0
+78 silly idealTree ├─┬ sshpk@1.10.1
+78 silly idealTree │ └── assert-plus@1.0.0
+78 silly idealTree ├── statuses@1.3.0
+78 silly idealTree ├── string_decoder@0.10.31
+78 silly idealTree ├── stringstream@0.0.5
+78 silly idealTree ├── strip-ansi@3.0.1
+78 silly idealTree ├── supports-color@2.0.0
+78 silly idealTree ├── tar@2.2.1
+78 silly idealTree ├── to-array@0.1.4
+78 silly idealTree ├── tough-cookie@2.3.1
+78 silly idealTree ├── tunnel-agent@0.4.3
+78 silly idealTree ├── tweetnacl@0.14.3
+78 silly idealTree ├── type-is@1.6.13
+78 silly idealTree ├── ultron@1.0.2
+78 silly idealTree ├── unpipe@1.0.0
+78 silly idealTree ├── util-deprecate@1.0.2
+78 silly idealTree ├── utils-merge@1.0.0
+78 silly idealTree ├── vary@1.1.0
+78 silly idealTree ├── verror@1.3.6
+78 silly idealTree ├── wrappy@1.0.2
+78 silly idealTree ├── ws@1.1.1
+78 silly idealTree ├── wtf-8@1.0.0
+78 silly idealTree ├── xmlhttprequest-ssl@1.5.1
+78 silly idealTree ├── xtend@4.0.1
+78 silly idealTree └── yeast@0.1.2
+79 silly generateActionsToTake Starting
+80 silly install generateActionsToTake
+81 silly generateActionsToTake Finishing
+82 silly diffTrees action count 3
+83 silly diffTrees update express@4.14.0
+84 silly diffTrees add sharp@0.16.1
+85 silly diffTrees update socket.io@1.5.0
+86 silly decomposeActions action count 24
+87 silly decomposeActions fetch express@4.14.0
+88 silly decomposeActions extract express@4.14.0
+89 silly decomposeActions test express@4.14.0
+90 silly decomposeActions preinstall express@4.14.0
+91 silly decomposeActions build express@4.14.0
+92 silly decomposeActions install express@4.14.0
+93 silly decomposeActions postinstall express@4.14.0
+94 silly decomposeActions finalize express@4.14.0
+95 silly decomposeActions fetch sharp@0.16.1
+96 silly decomposeActions extract sharp@0.16.1
+97 silly decomposeActions test sharp@0.16.1
+98 silly decomposeActions preinstall sharp@0.16.1
+99 silly decomposeActions build sharp@0.16.1
+100 silly decomposeActions install sharp@0.16.1
+101 silly decomposeActions postinstall sharp@0.16.1
+102 silly decomposeActions finalize sharp@0.16.1
+103 silly decomposeActions fetch socket.io@1.5.0
+104 silly decomposeActions extract socket.io@1.5.0
+105 silly decomposeActions test socket.io@1.5.0
+106 silly decomposeActions preinstall socket.io@1.5.0
+107 silly decomposeActions build socket.io@1.5.0
+108 silly decomposeActions install socket.io@1.5.0
+109 silly decomposeActions postinstall socket.io@1.5.0
+110 silly decomposeActions finalize socket.io@1.5.0
+111 silly executeActions Starting
+112 silly install executeActions
+113 silly doSerial global-install 0
+114 silly doParallel fetch 3
+115 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+116 verbose makeDirectory /home/ubuntu/.npm/_locks creation not in flight; initializing
+117 silly makeDirectory /home/ubuntu/.npm/_locks uid: 1000 gid: 1000
+118 verbose lock using /home/ubuntu/.npm/_locks/staging-86a96c5d9eb9ae19.lock for /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging
+119 silly doParallel extract 3
+120 silly extract express@4.14.0
+121 silly extract sharp@0.16.1
+122 silly extract socket.io@1.5.0
+123 silly addNamed express@4.14.0
+124 verbose addNamed "4.14.0" is a plain semver version for express
+125 silly mapToRegistry name express
+126 silly mapToRegistry using default registry
+127 silly mapToRegistry registry https://registry.npmjs.org/
+128 silly mapToRegistry data Result {
+128 silly mapToRegistry   raw: 'express',
+128 silly mapToRegistry   scope: null,
+128 silly mapToRegistry   name: 'express',
+128 silly mapToRegistry   rawSpec: '',
+128 silly mapToRegistry   spec: 'latest',
+128 silly mapToRegistry   type: 'tag' }
+129 silly mapToRegistry uri https://registry.npmjs.org/express
+130 verbose addNameVersion registry:https://registry.npmjs.org/express not in flight; fetching
+131 silly addNamed socket.io@1.5.0
+132 verbose addNamed "1.5.0" is a plain semver version for socket.io
+133 silly mapToRegistry name socket.io
+134 silly mapToRegistry using default registry
+135 silly mapToRegistry registry https://registry.npmjs.org/
+136 silly mapToRegistry data Result {
+136 silly mapToRegistry   raw: 'socket.io',
+136 silly mapToRegistry   scope: null,
+136 silly mapToRegistry   name: 'socket.io',
+136 silly mapToRegistry   rawSpec: '',
+136 silly mapToRegistry   spec: 'latest',
+136 silly mapToRegistry   type: 'tag' }
+137 silly mapToRegistry uri https://registry.npmjs.org/socket.io
+138 verbose addNameVersion registry:https://registry.npmjs.org/socket.io not in flight; fetching
+139 verbose request uri https://registry.npmjs.org/express
+140 verbose request no auth needed
+141 info attempt registry request try #1 at 2:39:54 AM
+142 http request GET https://registry.npmjs.org/express
+143 verbose request uri https://registry.npmjs.org/socket.io
+144 verbose request no auth needed
+145 info attempt registry request try #1 at 2:39:54 AM
+146 http request GET https://registry.npmjs.org/socket.io
+147 verbose unbuild node_modules/.staging/sharp-35356954
+148 silly gentlyRm /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/sharp-35356954 is being purged from base /home/ubuntu/fast-neural-doodle/HackFDU
+149 verbose gentlyRm don't care about contents; nuking /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/sharp-35356954
+150 verbose tar unpack /home/ubuntu/.npm/sharp/0.16.1/package.tgz
+151 verbose tar unpacking to /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/sharp-35356954
+152 silly gentlyRm /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/sharp-35356954 is being purged
+153 verbose gentlyRm don't care about contents; nuking /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/sharp-35356954
+154 silly gunzTarPerm modes [ '775', '664' ]
+155 silly gunzTarPerm extractEntry package.json
+156 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+157 silly gunzTarPerm extractEntry .npmignore
+158 silly gunzTarPerm extractEntry README.md
+159 silly gunzTarPerm extractEntry LICENSE
+160 silly gunzTarPerm extractEntry binding.js
+161 silly gunzTarPerm extractEntry index.js
+162 silly gunzTarPerm extractEntry binding.gyp
+163 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 436 ]
+164 silly gunzTarPerm extractEntry docs/api.md
+165 silly gunzTarPerm extractEntry docs/changelog.md
+166 silly gunzTarPerm modified mode [ 'docs/changelog.md', 420, 436 ]
+167 silly gunzTarPerm extractEntry docs/index.md
+168 silly gunzTarPerm extractEntry docs/install.md
+169 silly gunzTarPerm modified mode [ 'docs/install.md', 420, 436 ]
+170 silly gunzTarPerm extractEntry docs/performance.md
+171 silly gunzTarPerm modified mode [ 'docs/performance.md', 420, 436 ]
+172 silly gunzTarPerm extractEntry icc/cmyk.icm
+173 silly gunzTarPerm modified mode [ 'icc/cmyk.icm', 420, 436 ]
+174 silly gunzTarPerm extractEntry icc/sRGB.icc
+175 silly gunzTarPerm modified mode [ 'icc/sRGB.icc', 420, 436 ]
+176 silly gunzTarPerm extractEntry src/operations.h
+177 silly gunzTarPerm extractEntry src/common.cc
+178 silly gunzTarPerm modified mode [ 'src/common.cc', 420, 436 ]
+179 silly gunzTarPerm extractEntry src/libvips/cplusplus/VError.cpp
+180 silly gunzTarPerm extractEntry src/libvips/cplusplus/VImage.cpp
+181 silly gunzTarPerm extractEntry src/libvips/cplusplus/VInterpolate.cpp
+182 silly gunzTarPerm extractEntry src/libvips/cplusplus/vips-operators.cpp
+183 silly gunzTarPerm extractEntry src/metadata.cc
+184 silly gunzTarPerm extractEntry src/metadata.h
+185 silly gunzTarPerm extractEntry src/operations.cc
+186 silly gunzTarPerm extractEntry src/common.h
+187 silly gunzTarPerm extractEntry src/pipeline.cc
+188 silly gunzTarPerm extractEntry src/pipeline.h
+189 silly gunzTarPerm extractEntry src/sharp.cc
+190 silly gunzTarPerm extractEntry src/utilities.cc
+191 silly gunzTarPerm extractEntry src/utilities.h
+192 silly gunzTarPerm extractEntry CONTRIBUTING.md
+193 silly gentlyRm /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/sharp-35356954/node_modules is being purged
+194 verbose gentlyRm don't care about contents; nuking /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/sharp-35356954/node_modules
+195 http 200 https://registry.npmjs.org/express
+196 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+196 verbose headers   etag: '"1D3UP4P9MECQ614W0QY0XOIBS"',
+196 verbose headers   'content-type': 'application/json',
+196 verbose headers   'content-encoding': 'gzip',
+196 verbose headers   'cache-control': 'max-age=300',
+196 verbose headers   'content-length': '56556',
+196 verbose headers   'accept-ranges': 'bytes',
+196 verbose headers   date: 'Sat, 15 Oct 2016 18:39:54 GMT',
+196 verbose headers   via: '1.1 varnish',
+196 verbose headers   age: '184',
+196 verbose headers   connection: 'keep-alive',
+196 verbose headers   'x-served-by': 'cache-itm7423-ITM',
+196 verbose headers   'x-cache': 'HIT',
+196 verbose headers   'x-cache-hits': '3',
+196 verbose headers   'x-timer': 'S1476556794.410562,VS0,VE0',
+196 verbose headers   vary: 'Accept-Encoding' }
+197 silly get cb [ 200,
+197 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+197 silly get     etag: '"1D3UP4P9MECQ614W0QY0XOIBS"',
+197 silly get     'content-type': 'application/json',
+197 silly get     'content-encoding': 'gzip',
+197 silly get     'cache-control': 'max-age=300',
+197 silly get     'content-length': '56556',
+197 silly get     'accept-ranges': 'bytes',
+197 silly get     date: 'Sat, 15 Oct 2016 18:39:54 GMT',
+197 silly get     via: '1.1 varnish',
+197 silly get     age: '184',
+197 silly get     connection: 'keep-alive',
+197 silly get     'x-served-by': 'cache-itm7423-ITM',
+197 silly get     'x-cache': 'HIT',
+197 silly get     'x-cache-hits': '3',
+197 silly get     'x-timer': 'S1476556794.410562,VS0,VE0',
+197 silly get     vary: 'Accept-Encoding' } ]
+198 verbose get saving express to /home/ubuntu/.npm/registry.npmjs.org/express/.cache.json
+199 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+200 silly mapToRegistry name express
+201 silly mapToRegistry using default registry
+202 silly mapToRegistry registry https://registry.npmjs.org/
+203 silly mapToRegistry data Result {
+203 silly mapToRegistry   raw: 'express',
+203 silly mapToRegistry   scope: null,
+203 silly mapToRegistry   name: 'express',
+203 silly mapToRegistry   rawSpec: '',
+203 silly mapToRegistry   spec: 'latest',
+203 silly mapToRegistry   type: 'tag' }
+204 silly mapToRegistry uri https://registry.npmjs.org/express
+205 verbose addRemoteTarball https://registry.npmjs.org/express/-/express-4.14.0.tgz not in flight; adding
+206 verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-4.14.0.tgz',
+206 verbose addRemoteTarball   'c1ee3f42cdc891fb3dc650a8922d51ec847d0d66' ]
+207 info retry fetch attempt 1 at 2:39:54 AM
+208 info attempt registry request try #1 at 2:39:54 AM
+209 http fetch GET https://registry.npmjs.org/express/-/express-4.14.0.tgz
+210 http fetch 200 https://registry.npmjs.org/express/-/express-4.14.0.tgz
+211 silly fetchAndShaCheck shasum c1ee3f42cdc891fb3dc650a8922d51ec847d0d66
+212 verbose addTmpTarball /tmp/npm-7953-c4353620/registry.npmjs.org/express/-/express-4.14.0.tgz not in flight; adding
+213 verbose addTmpTarball already have metadata; skipping unpack for express@4.14.0
+214 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+215 verbose unbuild node_modules/.staging/express-65e4c79f
+216 silly gentlyRm /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/express-65e4c79f is being purged from base /home/ubuntu/fast-neural-doodle/HackFDU
+217 verbose gentlyRm don't care about contents; nuking /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/express-65e4c79f
+218 verbose tar unpack /home/ubuntu/.npm/express/4.14.0/package.tgz
+219 verbose tar unpacking to /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/express-65e4c79f
+220 silly gentlyRm /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/express-65e4c79f is being purged
+221 verbose gentlyRm don't care about contents; nuking /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/express-65e4c79f
+222 silly gunzTarPerm modes [ '775', '664' ]
+223 silly gunzTarPerm extractEntry package.json
+224 silly gunzTarPerm modified mode [ 'package.json', 438, 436 ]
+225 silly gunzTarPerm extractEntry LICENSE
+226 silly gunzTarPerm modified mode [ 'LICENSE', 438, 436 ]
+227 silly gunzTarPerm extractEntry index.js
+228 silly gunzTarPerm modified mode [ 'index.js', 438, 436 ]
+229 silly gunzTarPerm extractEntry History.md
+230 silly gunzTarPerm modified mode [ 'History.md', 438, 436 ]
+231 silly gunzTarPerm extractEntry Readme.md
+232 silly gunzTarPerm modified mode [ 'Readme.md', 438, 436 ]
+233 silly gunzTarPerm extractEntry lib/application.js
+234 silly gunzTarPerm modified mode [ 'lib/application.js', 438, 436 ]
+235 silly gunzTarPerm extractEntry lib/express.js
+236 silly gunzTarPerm modified mode [ 'lib/express.js', 438, 436 ]
+237 silly gunzTarPerm extractEntry lib/request.js
+238 silly gunzTarPerm modified mode [ 'lib/request.js', 438, 436 ]
+239 silly gunzTarPerm extractEntry lib/response.js
+240 silly gunzTarPerm modified mode [ 'lib/response.js', 438, 436 ]
+241 silly gunzTarPerm extractEntry lib/utils.js
+242 silly gunzTarPerm modified mode [ 'lib/utils.js', 438, 436 ]
+243 silly gunzTarPerm extractEntry lib/view.js
+244 silly gunzTarPerm modified mode [ 'lib/view.js', 438, 436 ]
+245 silly gunzTarPerm extractEntry lib/middleware/init.js
+246 silly gunzTarPerm modified mode [ 'lib/middleware/init.js', 438, 436 ]
+247 silly gunzTarPerm extractEntry lib/middleware/query.js
+248 silly gunzTarPerm modified mode [ 'lib/middleware/query.js', 438, 436 ]
+249 silly gunzTarPerm extractEntry lib/router/index.js
+250 silly gunzTarPerm modified mode [ 'lib/router/index.js', 438, 436 ]
+251 silly gunzTarPerm extractEntry lib/router/layer.js
+252 silly gunzTarPerm modified mode [ 'lib/router/layer.js', 438, 436 ]
+253 silly gunzTarPerm extractEntry lib/router/route.js
+254 silly gunzTarPerm modified mode [ 'lib/router/route.js', 438, 436 ]
+255 silly gentlyRm /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/express-65e4c79f/node_modules is being purged
+256 verbose gentlyRm don't care about contents; nuking /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/express-65e4c79f/node_modules
+257 http 200 https://registry.npmjs.org/socket.io
+258 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+258 verbose headers   etag: '"90B3PZ47BARSNBP5Q8F76T16J"',
+258 verbose headers   'content-type': 'application/json',
+258 verbose headers   'content-encoding': 'gzip',
+258 verbose headers   'cache-control': 'max-age=300',
+258 verbose headers   'content-length': '21327',
+258 verbose headers   'accept-ranges': 'bytes',
+258 verbose headers   date: 'Sat, 15 Oct 2016 18:39:54 GMT',
+258 verbose headers   via: '1.1 varnish',
+258 verbose headers   age: '133',
+258 verbose headers   connection: 'keep-alive',
+258 verbose headers   'x-served-by': 'cache-lax8629-LAX',
+258 verbose headers   'x-cache': 'HIT',
+258 verbose headers   'x-cache-hits': '1',
+258 verbose headers   'x-timer': 'S1476556794.893517,VS0,VE0',
+258 verbose headers   vary: 'Accept-Encoding' }
+259 silly get cb [ 200,
+259 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+259 silly get     etag: '"90B3PZ47BARSNBP5Q8F76T16J"',
+259 silly get     'content-type': 'application/json',
+259 silly get     'content-encoding': 'gzip',
+259 silly get     'cache-control': 'max-age=300',
+259 silly get     'content-length': '21327',
+259 silly get     'accept-ranges': 'bytes',
+259 silly get     date: 'Sat, 15 Oct 2016 18:39:54 GMT',
+259 silly get     via: '1.1 varnish',
+259 silly get     age: '133',
+259 silly get     connection: 'keep-alive',
+259 silly get     'x-served-by': 'cache-lax8629-LAX',
+259 silly get     'x-cache': 'HIT',
+259 silly get     'x-cache-hits': '1',
+259 silly get     'x-timer': 'S1476556794.893517,VS0,VE0',
+259 silly get     vary: 'Accept-Encoding' } ]
+260 verbose get saving socket.io to /home/ubuntu/.npm/registry.npmjs.org/socket.io/.cache.json
+261 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+262 silly mapToRegistry name socket.io
+263 silly mapToRegistry using default registry
+264 silly mapToRegistry registry https://registry.npmjs.org/
+265 silly mapToRegistry data Result {
+265 silly mapToRegistry   raw: 'socket.io',
+265 silly mapToRegistry   scope: null,
+265 silly mapToRegistry   name: 'socket.io',
+265 silly mapToRegistry   rawSpec: '',
+265 silly mapToRegistry   spec: 'latest',
+265 silly mapToRegistry   type: 'tag' }
+266 silly mapToRegistry uri https://registry.npmjs.org/socket.io
+267 verbose addRemoteTarball https://registry.npmjs.org/socket.io/-/socket.io-1.5.0.tgz not in flight; adding
+268 verbose addRemoteTarball [ 'https://registry.npmjs.org/socket.io/-/socket.io-1.5.0.tgz',
+268 verbose addRemoteTarball   '024dd9719d9267d6a6984eebe2ab5ceb9a0b8a98' ]
+269 info retry fetch attempt 1 at 2:39:55 AM
+270 info attempt registry request try #1 at 2:39:55 AM
+271 http fetch GET https://registry.npmjs.org/socket.io/-/socket.io-1.5.0.tgz
+272 http fetch 200 https://registry.npmjs.org/socket.io/-/socket.io-1.5.0.tgz
+273 silly fetchAndShaCheck shasum 024dd9719d9267d6a6984eebe2ab5ceb9a0b8a98
+274 verbose addTmpTarball /tmp/npm-7953-c4353620/registry.npmjs.org/socket.io/-/socket.io-1.5.0.tgz not in flight; adding
+275 verbose addTmpTarball already have metadata; skipping unpack for socket.io@1.5.0
+276 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+277 verbose unbuild node_modules/.staging/socket.io-5bb4ac46
+278 silly gentlyRm /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/socket.io-5bb4ac46 is being purged from base /home/ubuntu/fast-neural-doodle/HackFDU
+279 verbose gentlyRm don't care about contents; nuking /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/socket.io-5bb4ac46
+280 verbose tar unpack /home/ubuntu/.npm/socket.io/1.5.0/package.tgz
+281 verbose tar unpacking to /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/socket.io-5bb4ac46
+282 silly gentlyRm /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/socket.io-5bb4ac46 is being purged
+283 verbose gentlyRm don't care about contents; nuking /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/socket.io-5bb4ac46
+284 silly gunzTarPerm modes [ '775', '664' ]
+285 silly gunzTarPerm extractEntry package.json
+286 silly gunzTarPerm extractEntry LICENSE
+287 silly gunzTarPerm extractEntry History.md
+288 silly gunzTarPerm extractEntry Readme.md
+289 silly gunzTarPerm extractEntry lib/client.js
+290 silly gunzTarPerm extractEntry lib/index.js
+291 silly gunzTarPerm extractEntry lib/namespace.js
+292 silly gunzTarPerm extractEntry lib/socket.js
+293 silly gentlyRm /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/socket.io-5bb4ac46/node_modules is being purged
+294 verbose gentlyRm don't care about contents; nuking /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/socket.io-5bb4ac46/node_modules
+295 silly doParallel preinstall 3
+296 silly preinstall express@4.14.0 /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/express-65e4c79f
+297 info lifecycle express@4.14.0~preinstall: express@4.14.0
+298 silly preinstall sharp@0.16.1 /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/sharp-35356954
+299 info lifecycle sharp@0.16.1~preinstall: sharp@0.16.1
+300 silly preinstall socket.io@1.5.0 /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/socket.io-5bb4ac46
+301 info lifecycle socket.io@1.5.0~preinstall: socket.io@1.5.0
+302 silly lifecycle express@4.14.0~preinstall: no script for preinstall, continuing
+303 silly lifecycle sharp@0.16.1~preinstall: no script for preinstall, continuing
+304 silly lifecycle socket.io@1.5.0~preinstall: no script for preinstall, continuing
+305 silly doReverseSerial remove 0
+306 silly doSerial move 0
+307 silly doSerial finalize 3
+308 silly finalize /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/express
+309 silly finalize /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/sharp
+310 silly finalize /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/socket.io
+311 silly doSerial build 3
+312 silly build express@4.14.0
+313 info linkStuff express@4.14.0
+314 silly linkStuff express@4.14.0 has /home/ubuntu/fast-neural-doodle/HackFDU/node_modules as its parent node_modules
+315 verbose linkBins express@4.14.0
+316 verbose linkMans express@4.14.0
+317 silly build sharp@0.16.1
+318 info linkStuff sharp@0.16.1
+319 silly linkStuff sharp@0.16.1 has /home/ubuntu/fast-neural-doodle/HackFDU/node_modules as its parent node_modules
+320 verbose linkBins sharp@0.16.1
+321 verbose linkMans sharp@0.16.1
+322 silly build socket.io@1.5.0
+323 info linkStuff socket.io@1.5.0
+324 silly linkStuff socket.io@1.5.0 has /home/ubuntu/fast-neural-doodle/HackFDU/node_modules as its parent node_modules
+325 verbose linkBins socket.io@1.5.0
+326 verbose linkMans socket.io@1.5.0
+327 silly doSerial global-link 0
+328 silly doParallel update-linked 0
+329 silly doSerial install 3
+330 silly install express@4.14.0 /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/express-65e4c79f
+331 info lifecycle express@4.14.0~install: express@4.14.0
+332 silly lifecycle express@4.14.0~install: no script for install, continuing
+333 silly install sharp@0.16.1 /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging/sharp-35356954
+334 info lifecycle sharp@0.16.1~install: sharp@0.16.1
+335 verbose lifecycle sharp@0.16.1~install: unsafe-perm in lifecycle true
+336 verbose lifecycle sharp@0.16.1~install: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/ubuntu/fast-neural-doodle/HackFDU/node_modules/sharp/node_modules/.bin:/home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.bin:/usr/bin:/usr/local/cuda/bin:/home/ubuntu/torch/install/bin:/home/ubuntu/torch/install/bin:/home/ubuntu/torch/install/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+337 verbose lifecycle sharp@0.16.1~install: CWD: /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/sharp
+338 silly lifecycle sharp@0.16.1~install: Args: [ '-c', 'node-gyp rebuild' ]
+339 silly lifecycle sharp@0.16.1~install: Returned: code: 1  signal: null
+340 info lifecycle sharp@0.16.1~install: Failed to exec install script
+341 verbose unlock done using /home/ubuntu/.npm/_locks/staging-86a96c5d9eb9ae19.lock for /home/ubuntu/fast-neural-doodle/HackFDU/node_modules/.staging
+342 silly rollbackFailedOptional Starting
+343 silly rollbackFailedOptional Finishing
+344 silly runTopLevelLifecycles Starting
+345 silly runTopLevelLifecycles Finishing
+346 silly install printInstalled
+347 warn enoent ENOENT: no such file or directory, open '/home/ubuntu/fast-neural-doodle/HackFDU/package.json'
+348 warn enoent ENOENT: no such file or directory, open '/home/ubuntu/fast-neural-doodle/HackFDU/node_modules/paperjs-v0.10.2/package.json'
+349 warn HackFDU No description
+350 warn HackFDU No repository field.
+351 warn HackFDU No README data
+352 warn HackFDU No license field.
+353 verbose stack Error: sharp@0.16.1 install: `node-gyp rebuild`
+353 verbose stack Exit status 1
+353 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:239:16)
+353 verbose stack     at emitTwo (events.js:100:13)
+353 verbose stack     at EventEmitter.emit (events.js:185:7)
+353 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+353 verbose stack     at emitTwo (events.js:100:13)
+353 verbose stack     at ChildProcess.emit (events.js:185:7)
+353 verbose stack     at maybeClose (internal/child_process.js:850:16)
+353 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+354 verbose pkgid sharp@0.16.1
+355 verbose cwd /home/ubuntu/fast-neural-doodle/HackFDU
+356 error Linux 4.2.0-27-generic
+357 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "sharp"
+358 error node v5.12.0
+359 error npm  v3.8.6
+360 error code ELIFECYCLE
+361 error sharp@0.16.1 install: `node-gyp rebuild`
+361 error Exit status 1
+362 error Failed at the sharp@0.16.1 install script 'node-gyp rebuild'.
+362 error Make sure you have the latest version of node.js and npm installed.
+362 error If you do, this is most likely a problem with the sharp package,
+362 error not with npm itself.
+362 error Tell the author that this fails on your system:
+362 error     node-gyp rebuild
+362 error You can get information on how to open an issue for this project with:
+362 error     npm bugs sharp
+362 error Or if that isn't available, you can get their info via:
+362 error     npm owner ls sharp
+362 error There is likely additional logging output above.
+363 verbose exit [ 1, true ]

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>VR Picture Drawing</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/pig.css" media="screen" type="text/css" />
+</head>
+<body>
+    <div class="fa" id="fa">
+        <div id="topLeft">
+            <div class="picture">
+                <a href="test.html" class="styleLink"><img src="images/1.png" class="leftPic"/> <br> <span class="leftSpan">STAR</span></a>
+            </div>
+            <div class="picture">
+                <a href="##" class="styleLink"><img src="images/2.jpg" class="leftPic"/> <br> <span class="leftSpan">RIVER</span></a>
+            </div>
+            <div class="picture">
+                <a href="##" class="styleLink"><img src="images/3.png" class="leftPic"/> <br> <span class="leftSpan">SEA</span></a>
+            </div>
+        </div>
+
+        <div id="topMedium">
+            <canvas id="myCanvas" width="512" height="320">Warning! your browser doesn't support canvas label!</canvas>
+		<img id="receive" width="512" height="320" src="http://10.221.128.53:3000/output.jpg">
+        </div>
+        <!-- <div id="topMedium">
+            <div id=""></div>
+        </div> -->
+
+        <div id="topRight">
+            <div class="picture">
+                <a href="##" class="styleLink"><img src="images/fire.jpeg" class="rightPic"/> <br> <span class="rightSpan">FIRE</span></a>
+            </div>
+            <div class="picture">
+                <a href="##" class="styleLink"><img src="images/forest.jpeg" class="rightPic"/> <br> <span class="rightSpan">FOREST</span></a>
+            </div>
+            <div class="picture">
+                <a href="##" class="styleLink"><img src="images/future.jpeg" class="rightPic"/> <br> <span class="rightSpan">FUTURE</span></a>
+            </div>
+            <div class="picture">
+                <a href="##" class="styleLink"><img src="images/ice.jpeg" class="rightPic"/> <br> <span class="rightSpan">ICE</span></a>
+            </div>
+        </div>
+
+        <div id="selectionLeft">
+            <div id="color">
+                <span class="threed">Choose the color of the brush：</span><br><br>
+                <input class="i1 color" type="button" value="" />
+                <input class="i2 color" type="button" value="" />
+                <input class="i3 color" type="button" value="" />
+                <input class="i4 color" type="button" value="" />
+                <input class="i5 color" type="button" value="" />
+                <input class="i6 color" type="button" value="" />
+                <input class="i7 color" type="button" value="" />
+                <input class="i8 color" type="button" value="" />
+                <input class="i9 color" type="button" value="" />
+            </div>
+
+            <div class="font" id="font">
+                <span class="threed" style="">Select the width of the brush：</span><br><br>
+                <input type="button" value="thin" style="width:60px" class="bottomBtn"/>
+                <input type="button" value="medium" style="width:60px" class="grea bottomBtn"/>
+                <input type="button" value="coarse" style="width:60px" class="bottomBtn"/>
+            </div>
+        </div>
+
+        <div id="selectionMedium">
+        </div>
+
+
+        <div id="selectionRight">
+            <span id="error" class="threed">Choose the eraser：</span>
+            <input id="eraser" style="width:60px;font-size:14px; margin-bottom: 26px;"type="button" value="eraser" class="bottomBtn"/>
+            <br>
+            <input id="clear" type="button" value="Remove" style="width:80px;" class="bottomBtn"/>
+            <input id="revocation" type="button" value="Undo" style="width:80px;" class="bottomBtn"/>
+            <input id="imageUrl" type="button" value="Output" style="width:80px;background-color: #555555" class="bottomBtn"/>
+        </div>
+
+
+
+        <div id="div1"></div>
+    </div>
+    <div id="html"></div>
+    <script src="js/jquery.js"></script>
+    <script src="js/styleChoose.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="js/index2.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/index_public.js"></script>
+</body>
+</html>

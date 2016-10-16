@@ -1,0 +1,145 @@
+ *{margin:0;padding:0;}
+ .fa{
+  width:100%;
+ }
+ .fa input{
+  width:25px;height:25px;
+  border:1px solid #fff;
+  border-radius:4px;
+  box-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135
+
+ }
+ a{
+  text-decoration: none;
+ }
+ #color input:hover{
+  border:1px solid rgba(255,255,255,0.2);
+ }
+ .fa #font input:hover{
+  background: rgba(255,255,255,0.2);
+
+ }
+ #selectionRight input:hover{
+  background: rgba(255,255,255,0.2);
+ }
+ .fa .i1{
+   background:#000000;
+ }
+ .fa .i2{background:#FF0000;}
+ .fa .i3{background:#80FF00;}
+ .fa .i4{background:#00FFFF;}
+ .fa .i5{background:#808080;}
+ .fa .i6{background:#FF8000;}
+ .fa .i7{background:#408080;}
+ .fa .i8{background:#8000FF;}
+ .fa .i9{background:#CCCC00;}
+ #canvas{
+  background:#eee;
+  cursor:default;
+  margin-top: 10px;
+ }
+ .font input{font-size:14px;}
+
+ .styleLink:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 0 3px rgba(255,219,77,1);
+  -moz-box-shadow: 0 0 0 3px rgba(255,219,77,1);
+  box-shadow: 9px 3px 3px 3px rgba(255,219,77,1);
+ }
+
+ .picture_disabled {
+  transition: opacity .3s;
+  opacity: .2;
+ }
+
+ #topLeft{
+  display: inline-block;
+  vertical-align: top;
+  width:13%;
+ }
+ #topLeft .leftPic{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  margin-top: 15px;
+  padding-left: 23%;
+ }
+
+ #topLeft .leftSpan{
+  font-family: 'Sitka Heading';
+  padding-left: 35%;
+  color: transparent;
+  background-color : black;
+  text-shadow : rgba(255,255,255,0.5) 0 5px 6px, rgba(255,255,255,0.2) 1px 3px 3px;
+  -webkit-background-clip : text;
+ }
+ #topMedium{
+  display: inline-block;
+  vertical-align: top;
+  width:72%;
+ }
+ #myCanvas {
+  margin:0 auto;
+  background: #fff;
+border: solid 1px #cfcfcf;
+ }
+#receive {
+	display:block;
+background: #fff;
+}
+ #topRight{
+  display: inline-block;
+  vertical-align: top;
+  width:14%;
+ }
+ #topRight .rightPic{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  margin-top: 15px;
+  padding-left: 20%;
+ }
+ #topRight .rightSpan{
+  font-family: 'Sitka Heading';
+  padding-left: 35%;
+  color: transparent;
+  background-color : black;
+  text-shadow : rgba(255,255,255,0.5) 0 5px 6px, rgba(255,255,255,0.2) 1px 3px 3px;
+  -webkit-background-clip : text;
+ }
+ #selectionLeft{
+  margin-top: 30px;
+  display: inline-block;
+  vertical-align: top;
+  width:20%;
+  padding-left: 10%;
+ }
+ #font{
+  margin-top: 20px;
+ }
+ #font .grea{
+  background: rgba(255,255,255,0.2);
+ }
+ #selectionMedium{
+  display: inline-block;
+  vertical-align: top;
+  width:35%;
+ }
+ #selectionRight{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 50px;
+  margin-left: 5%;
+ }
+
+ .fa .threed{
+  font-size: 20px;
+  color: #fafafa;
+  letter-spacing: 0;
+  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135
+ }
+ .fa .bottomBtn{
+  box-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135
+
+ }
+
